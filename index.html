@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>淳淳和小妍的食堂</title>
+    <title>spcly.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,16 +12,16 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <a href="#home">淳淳和小妍的食堂</a>
+                <a href="#">淳淳和小妍的食堂</a>
             </div>
             <div class="menu">
-                <a href="#home">首页</a>
-                <a href="#about">关于我们</a>
-                <a href="#menu">菜单</a>
-                <a href="#recipes">美食食谱</a>
-                <a href="#order">点餐</a>
-                <a href="#contact">联系我们</a>
-                <a href="#xiaoyan-order" class="xiaoyan-link">小妍专属</a>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#recipes">精选菜谱</a></li>
+                    <li><a href="#order">小妍点餐通道</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
             </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
@@ -31,56 +31,66 @@
 
     <!-- 移动端菜单 -->
     <div class="mobile-menu" id="mobile-menu">
-        <a href="#home" class="mobile-link">首页</a>
-        <a href="#about" class="mobile-link">关于我们</a>
-        <a href="#menu" class="mobile-link">菜单</a>
-        <a href="#recipes" class="mobile-link">美食食谱</a>
-        <a href="#order" class="mobile-link">点餐</a>
-        <a href="#contact" class="mobile-link">联系我们</a>
-        <a href="#xiaoyan-order" class="mobile-link xiaoyan-link">小妍专属</a>
+        <ul>
+                    <li><a href="#home" class="mobile-link">首页</a></li>
+                    <li><a href="#about" class="mobile-link">关于我们</a></li>
+                    <li><a href="#recipes" class="mobile-link">精选菜谱</a></li>
+                    <li><a href="#order" class="mobile-link">小妍点餐通道</a></li>
+                    <li><a href="#contact" class="mobile-link">联系我们</a></li>
+                </ul>
     </div>
 
     <!-- 首页部分 -->
-    <section id="home" class="home" style="background-image: url('./1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; overflow: hidden;">
-        <div class="home-content">
-            <h1>欢迎来到<span>淳淳和小妍的食堂</span></h1>
-            <p>用心制作的美食，带给你家的味道</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-weixin"></i></a>
-                <a href="#"><i class="fab fa-weibo"></i></a>
-                <a href="#"><i class="fas fa-phone"></i></a>
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>欢迎来到<span>淳淳和小妍的食堂</span></h1>
+                <p>为情侣打造的温馨小家，这里有最贴心的家常菜谱和便捷的在线点菜服务。</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="home-buttons">
+                    <a href="#order" class="btn btn-primary">立即点菜</a>
+                    <a href="#recipes" class="btn btn-secondary">浏览菜谱</a>
+                </div>
             </div>
-            <a href="#menu" class="btn">查看菜单</a>
         </div>
     </section>
 
-    <!-- 关于我们 -->
+    <!-- 关于我们部分 -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
                 <h2>关于我们</h2>
-                <p>用心做好每一餐</p>
+                <div class="line"></div>
             </div>
             <div class="about-content">
-                <div class="about-img">
-                    <img src="2.jpg" alt="关于我们">
+                <div class="about-image">
+                    <img src="https://img.zcool.cn/community/01326b5e77780aa801219c770929c3.jpg@1280w_1l_2o_100sh.jpg" alt="情侣小家" style="max-width:100%; height:auto;">
                 </div>
                 <div class="about-text">
-                    <h3>我们的故事</h3>
-                    <p>淳淳和小妍的食堂创立于2023年，是一家专注于家常美食的小餐馆。我们秉承"用心做好每一餐"的理念，为顾客提供健康、美味、实惠的家常菜肴。</p>
-                    <p>我们的食材新鲜，烹饪方式传统，注重保留食材的原汁原味。无论是红烧肉、清蒸鱼，还是简单的家常小炒，我们都用心制作，让每一位顾客都能品尝到家的味道。</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span>30+</span>
-                            <p>特色菜品</p>
+                    <h3>淳淳和小妍的食堂<span>情侣小家</span></h3>
+                    <p>淳淳和小妍的食堂创立于2025年，是一家专为情侣打造的温馨餐厅。我们致力于为每一对情侣提供舒适的用餐环境和美味的家常菜肴。</p>
+                    <p>我们的理念是"用美食传递爱"，希望每一道菜都能成为你们美好回忆的一部分。无论是约会、纪念日还是简单的日常用餐，我们都能满足您的需求。</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>营业时间：</span>
+                            <span>10:00 - 22:00</span>
                         </div>
-                        <div class="stat">
-                            <span>5000+</span>
-                            <p>满意顾客</p>
+                        <div class="info-item">
+                            <span>地址：</span>
+                            <span>中国 城市 区 街道 号</span>
                         </div>
-                        <div class="stat">
-                            <span>5</span>
-                            <p>优秀厨师</p>
+                        <div class="info-item">
+                            <span>电话：</span>
+                            <span>400-123-4567</span>
+                        </div>
+                        <div class="info-item">
+                            <span>特色：</span>
+                            <span>情侣套餐、家常菜、私人定制</span>
                         </div>
                     </div>
                 </div>
@@ -88,153 +98,82 @@
         </div>
     </section>
 
-    <!-- 菜单部分 -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <div class="section-title">
-                <h2>我们的菜单</h2>
-                <p>精选美食，满足你的味蕾</p>
-            </div>
-            <div class="menu-tabs">
-                <button class="tab-btn active" data-tab="all">全部</button>
-                <button class="tab-btn" data-tab="main">主菜</button>
-                <button class="tab-btn" data-tab="side">小吃</button>
-                <button class="tab-btn" data-tab="drink">饮品</button>
-            </div>
-            <div class="menu-items">
-                <!-- 主菜 -->
-                <div class="menu-item main" data-price="88">
-                    <div class="menu-img">
-                        <img src="3.jpg" alt="红烧肉">
-                    </div>
-                    <div class="menu-info">
-                        <h4>红烧肉 <span>¥88</span></h4>
-                        <p>精选五花肉，传统工艺制作，肥而不腻</p>
-                    </div>
-                </div>
-                <div class="menu-item main" data-price="98">
-                    <div class="menu-img">
-                        <img src="4.jpg" alt="清蒸鱼">
-                    </div>
-                    <div class="menu-info">
-                        <h4>清蒸鱼 <span>¥98</span></h4>
-                        <p>新鲜活鱼，清蒸保留原汁原味</p>
-                    </div>
-                </div>
-                <div class="menu-item main" data-price="78">
-                    <div class="menu-img">
-                        <img src="5.jpg" alt="糖醋排骨">
-                    </div>
-                    <div class="menu-info">
-                        <h4>糖醋排骨 <span>¥78</span></h4>
-                        <p>酸甜可口，肉质鲜嫩</p>
-                    </div>
-                </div>
-                <div class="menu-item main" data-price="58">
-                    <div class="menu-img">
-                        <img src="6.jpg" alt="宫保鸡丁">
-                    </div>
-                    <div class="menu-info">
-                        <h4>宫保鸡丁 <span>¥58</span></h4>
-                        <p>麻辣鲜香，口感丰富</p>
-                    </div>
-                </div>
-                <div class="menu-item main" data-price="38">
-                    <div class="menu-img">
-                        <img src="7.jpg" alt="麻婆豆腐">
-                    </div>
-                    <div class="menu-info">
-                        <h4>麻婆豆腐 <span>¥38</span></h4>
-                        <p>麻辣鲜香，豆腐嫩滑</p>
-                    </div>
-                </div>
-                <div class="menu-item main" data-price="32">
-                    <div class="menu-img">
-                        <img src="8.jpg" alt="蒜蓉西兰花">
-                    </div>
-                    <div class="menu-info">
-                        <h4>蒜蓉西兰花 <span>¥32</span></h4>
-                        <p>清爽可口，营养丰富</p>
-                    </div>
-                </div>
-                <!-- 小吃 -->
-                <div class="menu-item side" data-price="28">
-                    <div class="menu-img">
-                        <img src="9.jpg" alt="煎饺">
-                    </div>
-                    <div class="menu-info">
-                        <h4>煎饺 <span>¥28</span></h4>
-                        <p>外皮金黄酥脆，内馅鲜美多汁</p>
-                    </div>
-                </div>
-                <div class="menu-item side" data-price="22">
-                    <div class="menu-img">
-                        <img src="10.jpg" alt="春卷">
-                    </div>
-                    <div class="menu-info">
-                        <h4>春卷 <span>¥22</span></h4>
-                        <p>传统小吃，酥脆可口</p>
-                    </div>
-                </div>
-                <!-- 饮品 -->
-                <div class="menu-item drink" data-price="12">
-                    <div class="menu-img">
-                        <img src="11.jpg" alt="可乐">
-                    </div>
-                    <div class="menu-info">
-                        <h4>可乐 <span>¥12</span></h4>
-                        <p>冰镇可乐，消暑解渴</p>
-                    </div>
-                </div>
-                <div class="menu-item drink" data-price="12">
-                    <div class="menu-img">
-                        <img src="12.jpg" alt="雪碧">
-                    </div>
-                    <div class="menu-info">
-                        <h4>雪碧 <span>¥12</span></h4>
-                        <p>清爽柠檬味，解渴又提神</p>
-                    </div>
-                </div>
-                <!-- 这里可以继续添加更多菜品 -->
-            </div>
-        </div>
-    </section>
-
-    <!-- 美食食谱 -->
+    <!-- 精选菜谱部分 -->
     <section id="recipes" class="recipes">
         <div class="container">
             <div class="section-title">
-                <h2>美食食谱</h2>
-                <p>在家也能做出美味佳肴</p>
+                <h2>精选菜谱</h2>
+                <div class="line"></div>
             </div>
             <div class="recipes-content">
+                <!-- 小妍最爱的薯角培根披萨 -->
                 <div class="recipe-item">
-                    <div class="recipe-img">
-                        <img src="13.jpg" alt="红烧肉的做法">
+                    <div class="recipe-image">
+                        <img src="https://img.zcool.cn/community/01d0dc5f5c5314a801211c7a21996e.jpg@1280w_1l_2o_100sh.jpg" alt="薯角培根披萨" style="max-width:100%; height:auto;">
                     </div>
                     <div class="recipe-info">
-                        <h4>红烧肉的做法</h4>
-                        <p>准备五花肉、酱油、冰糖等材料，经过炖煮让肉质软烂入味...</p>
+                        <h3>薯角培根披萨</h3>
+                        <p>小妍最爱的薯角培根披萨！酥脆的薯角搭配咸香的培根，再加上浓郁的芝士，每一口都是满满幸福感。</p>
+                        <div class="recipe-meta">
+                            <span>准备时间：25分钟</span>
+                            <span>烹饪时间：15分钟</span>
+                            <span>难度：简单</span>
+                        </div>
+                        <div class="recipe-price">¥68.00</div>
                         <a href="#" class="recipe-link">查看详情</a>
                     </div>
                 </div>
+                
+                <!-- 小妍最爱的皮蛋瘦肉粥 -->
                 <div class="recipe-item">
-                    <div class="recipe-img">
-                        <img src="14.jpg" alt="清蒸鱼的做法">
+                    <div class="recipe-image">
+                        <img src="https://img.zcool.cn/community/017d105e42d9a1a8012165188c9f7b.jpg@1280w_1l_2o_100sh.jpg" alt="皮蛋瘦肉粥" style="max-width:100%; height:auto;">
                     </div>
                     <div class="recipe-info">
-                        <h4>清蒸鱼的做法</h4>
-                        <p>选用新鲜活鱼，配以葱姜蒜等调味料，清蒸保留原汁原味...</p>
+                        <h3>暖心皮蛋瘦肉粥</h3>
+                        <p>小妍最喜欢喝的皮蛋瘦肉粥！绵滑的米粥包裹着皮蛋的独特香气，搭配嫩滑的瘦肉，暖心又暖胃。</p>
+                        <div class="recipe-meta">
+                            <span>准备时间：10分钟</span>
+                            <span>烹饪时间：40分钟</span>
+                            <span>难度：中等</span>
+                        </div>
+                        <div class="recipe-price">¥32.00</div>
                         <a href="#" class="recipe-link">查看详情</a>
                     </div>
                 </div>
+                
+                <!-- 小妍最爱的红烧排骨 -->
                 <div class="recipe-item">
-                    <div class="recipe-img">
-                        <img src="15.jpg" alt="糖醋排骨的做法">
+                    <div class="recipe-image">
+                        <img src="https://img.zcool.cn/community/01e92d5e79122ba80121651867e50e.jpg@1280w_1l_2o_100sh.jpg" alt="红烧排骨" style="max-width:100%; height:auto;">
                     </div>
                     <div class="recipe-info">
-                        <h4>糖醋排骨的做法</h4>
-                        <p>排骨焯水后油炸，加入糖醋汁翻炒，酸甜可口...</p>
+                        <h3>酱香红烧排骨</h3>
+                        <p>小妍爱吃的红烧排骨！肉质鲜嫩多汁，酱香浓郁，甜而不腻，下饭神器。</p>
+                        <div class="recipe-meta">
+                            <span>准备时间：20分钟</span>
+                            <span>烹饪时间：50分钟</span>
+                            <span>难度：中等</span>
+                        </div>
+                        <div class="recipe-price">¥78.00</div>
+                        <a href="#" class="recipe-link">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 小妍最爱的芋泥蛋糕 -->
+                <div class="recipe-item">
+                    <div class="recipe-image">
+                        <img src="https://img.zcool.cn/community/01f53e5f70ce55a801219e3b01734f.jpg@1280w_1l_2o_100sh.jpg" alt="芋泥蛋糕" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>芋泥蛋糕</h3>
+                        <p>小妍爱吃的小甜品！松软的蛋糕搭配绵密的芋泥，甜而不腻，口感丰富。</p>
+                        <div class="recipe-meta">
+                            <span>准备时间：30分钟</span>
+                            <span>烹饪时间：40分钟</span>
+                            <span>难度：较高</span>
+                        </div>
+                        <div class="recipe-price">¥48.00</div>
                         <a href="#" class="recipe-link">查看详情</a>
                     </div>
                 </div>
@@ -242,180 +181,178 @@
         </div>
     </section>
 
-    <!-- 点餐部分 -->
+    <!-- 小妍点餐通道 -->
     <section id="order" class="order">
         <div class="container">
             <div class="section-title">
-                <h2>在线点餐</h2>
-                <p>方便快捷，美味送到家</p>
+                <h2>小妍点餐通道</h2>
+                <div class="line"></div>
             </div>
             <div class="order-content">
                 <div class="order-form">
-                    <h3>填写订单信息</h3>
-                    <form id="orderForm">
+                    <h3>小妍专属菜单</h3>
+                    <form id="order-form">
                         <div class="form-group">
-                            <label for="name">姓名</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" placeholder="您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">电话</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" placeholder="联系电话" required>
                         </div>
                         <div class="form-group">
-                            <label for="address">地址</label>
-                            <textarea id="address" name="address" required></textarea>
+                            <input type="date" placeholder="预订日期" required>
                         </div>
                         <div class="form-group">
-                            <label for="food">选择菜品</label>
-                            <select id="food" name="food" required>
-                                <option value="红烧肉">红烧肉 ¥88</option>
-                                <option value="清蒸鱼">清蒸鱼 ¥98</option>
-                                <option value="糖醋排骨">糖醋排骨 ¥78</option>
-                                <option value="宫保鸡丁">宫保鸡丁 ¥58</option>
-                                <option value="麻婆豆腐">麻婆豆腐 ¥38</option>
+                            <input type="time" placeholder="预订时间" required>
+                        </div>
+                        <div class="form-group">
+                            <select placeholder="就餐人数" required>
+                                <option value="">请选择就餐人数</option>
+                                <option value="1">1人</option>
+                                <option value="2">2人</option>
+                                <option value="3-4">3-4人</option>
+                                <option value="5-6">5-6人</option>
+                                <option value="7-8">7-8人</option>
+                                <option value="8+">8人以上</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="quantity">数量</label>
-                            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                            <label>小妍推荐菜品（可多选）</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="dishes" value="薯角培根披萨"> 薯角培根披萨</label>
+                                <label><input type="checkbox" name="dishes" value="皮蛋瘦肉粥"> 皮蛋瘦肉粥</label>
+                                <label><input type="checkbox" name="dishes" value="红烧排骨"> 红烧排骨</label>
+                                <label><input type="checkbox" name="dishes" value="芋泥蛋糕"> 芋泥蛋糕</label>
+                                <label><input type="checkbox" name="dishes" value="茄子"> 茄子</label>
+                                <label><input type="checkbox" name="dishes" value="番茄牛肉汤"> 番茄牛肉汤</label>
+                                <label><input type="checkbox" name="dishes" value="咸粽子"> 咸粽子</label>
+                                <label><input type="checkbox" name="dishes" value="鲅鱼饺子"> 鲅鱼饺子</label>
+                                <label><input type="checkbox" name="dishes" value="耙耙柑"> 耙耙柑</label>
+                                <label><input type="checkbox" name="dishes" value="玉米鲜肉馅包子"> 玉米鲜肉馅包子</label>
+                                <label><input type="checkbox" name="dishes" value="土豆泥"> 土豆泥</label>
+                                <label><input type="checkbox" name="dishes" value="烧卖"> 烧卖</label>
+                                <label><input type="checkbox" name="dishes" value="猪肉包子"> 猪肉包子</label>
+                                <label><input type="checkbox" name="dishes" value="红烧日本豆腐"> 红烧日本豆腐</label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="message">备注信息</label>
-                            <textarea id="message" name="message"></textarea>
+                            <label>饮品选择</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="drinks" value="蓝莓味酸奶"> 蓝莓味酸奶</label>
+                                <label><input type="checkbox" name="drinks" value="Meco果汁茶"> Meco果汁茶</label>
+                                <label><input type="checkbox" name="drinks" value="可乐"> 可乐</label>
+                                <label><input type="checkbox" name="drinks" value="AD钙奶"> AD钙奶</label>
+                            </div>
                         </div>
-                        <button type="submit" class="btn">提交订单</button>
+                        <div class="form-group">
+                            <textarea id="note" placeholder="小妍不吃芹菜和胡萝卜哦~如有其他特殊要求，请在此说明"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">提交预订</button>
                     </form>
                 </div>
-                <div class="order-image">
-                    <img src="16.jpg" alt="在线点餐">
+                <div class="order-info">
+                    <h3>预订须知</h3>
+                    <ul>
+                        <li>• 请至少提前2小时预约，节假日请提前1天</li>
+                        <li>• 预订成功后，我们会通过短信或电话确认</li>
+                        <li>• 如需取消或更改预约，请提前1小时通知我们</li>
+                        <li>• 情侣套餐需提前3小时预约</li>
+                        <li>• 我们提供免费WiFi和停车位</li>
+                    </ul>
+                    <div class="promotion">
+                        <h4>优惠活动</h4>
+                        <p>首次预订可享受9折优惠！</p>
+                        <p>情侣用餐赠送精美小礼品！</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 联系我们 -->
+    <!-- 联系我们部分 -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
                 <h2>联系我们</h2>
-                <p>随时为您服务</p>
+                <div class="line"></div>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>地址</h4>
-                            <p>北京市朝阳区建国路88号</p>
-                        </div>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@spcly.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>电话</h4>
-                            <p>138-8888-8888</p>
-                        </div>
+                        <span>400-123-4567</span>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>邮箱</h4>
-                            <p>info@spcly.com</p>
-                        </div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国 城市 区 街道 号</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>营业时间</h4>
-                            <p>周一至周日 10:00-22:00</p>
-                        </div>
+                        <span>10:00 - 22:00（每日）</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>发送消息</h3>
-                    <form id="contactForm">
+                    <form id="contact-form">
                         <div class="form-group">
-                            <label for="contactName">姓名</label>
-                            <input type="text" id="contactName" name="contactName" required>
+                            <input type="text" placeholder="您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactEmail">邮箱</label>
-                            <input type="email" id="contactEmail" name="contactEmail" required>
+                            <input type="email" placeholder="您的邮箱" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactSubject">主题</label>
-                            <input type="text" id="contactSubject" name="contactSubject" required>
+                            <input type="text" placeholder="主题" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactMessage">消息</label>
-                            <textarea id="contactMessage" name="contactMessage" required></textarea>
+                            <textarea placeholder="您的留言或建议" required></textarea>
                         </div>
-                        <button type="submit" class="btn">发送消息</button>
+                        <button type="submit" class="btn btn-primary">发送留言</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 小妍专属部分 -->
-    <section id="xiaoyan-order" class="xiaoyan-order">
-        <div class="container">
-            <div class="section-title">
-                <h2>小妍专属</h2>
-                <p>为小妍定制的美食</p>
-            </div>
-            <div class="xiaoyan-content">
-                <div class="xiaoyan-image">
-                    <img src="17.jpg" alt="小妍专属美食">
-                </div>
-                <div class="xiaoyan-text">
-                    <h3>小妍，这是专为你准备的美食</h3>
-                    <p>亲爱的小妍，知道你喜欢吃什么，这些都是为你精心准备的。无论是酸甜可口的糖醋排骨，还是香辣开胃的宫保鸡丁，希望你能喜欢。</p>
-                    <p>如果你有特别想吃的，随时告诉我，我会为你准备。</p>
-                    <div class="xiaoyan-menu">
-                        <h4>小妍的专属菜单</h4>
-                        <ul>
-                            <li>糖醋排骨</li>
-                            <li>宫保鸡丁</li>
-                            <li>清蒸鱼</li>
-                            <li>麻婆豆腐</li>
-                            <li>蒜蓉西兰花</li>
-                        </ul>
-                    </div>
-                    <a href="#order" class="btn xiaoyan-btn">立即点餐</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
+    <!-- 页脚部分 -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#home">淳淳和小妍的食堂</a>
+                    <a href="#">spcly.com</a>
                 </div>
                 <div class="footer-links">
                     <a href="#home">首页</a>
                     <a href="#about">关于我们</a>
-                    <a href="#menu">菜单</a>
-                    <a href="#recipes">美食食谱</a>
-                    <a href="#order">点餐</a>
+                    <a href="#recipes">精选菜谱</a>
+                    <a href="#order">小妍点餐通道</a>
                     <a href="#contact">联系我们</a>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-weixin"></i></a>
-                    <a href="#"><i class="fab fa-weibo"></i></a>
-                    <a href="#"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 淳淳和小妍的食堂. 保留所有权利.</p>
+                <p>&copy; 2023 spcly.com. 保留所有权利。</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
