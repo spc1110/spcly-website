@@ -1,3 +1,4 @@
+// DOM元素选择
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -12,65 +13,74 @@ const totalPriceElement = document.getElementById('total-price');
 const orderButton = document.querySelector('button[type="submit"]');
 const quickOrderOptions = document.querySelectorAll('.quick-order-option');
 const tasteOptions = document.querySelectorAll('.taste-option');
+const homeSection = document.getElementById('home');
 
-// 移动菜单切换
-hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+// 动态设置背景图
+window.addEventListener('load', function() {
+    // 创建一个新的Image对象来预加载图片
+    const img = new Image();
+    img.src = './1.jpg';
     
-    // 汉堡菜单图标切换
-    const icon = hamburger.querySelector('i');
-    if (mobileMenu.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+    img.onload = function() {
+        console.log('背景图加载成功');
+        // 图片加载成功后，设置背景图
+        homeSection.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./1.jpg)';
+        homeSection.style.backgroundSize = 'cover';
+        homeSection.style.backgroundPosition = 'center';
+        homeSection.style.backgroundRepeat = 'no-repeat';
+        homeSection.style.backgroundAttachment = 'fixed';
+    };
+    
+    img.onerror = function() {
+        console.log('背景图加载失败');
+        // 加载失败时，可以设置一个默认背景色或替代图片
+        homeSection.style.backgroundColor = '#333';
+    };
+});
+
+// 移动端菜单切换
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
+
+    // 移动端菜单链接点击事件
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+    });
+}
+
+// 滚动事件处理
+window.addEventListener('scroll', () => {
+    if (nav) {
+        if (window.scrollY > 100) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+    
+    // 检查backToTop元素是否存在再添加事件
+    if (backToTop) {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
     }
 });
 
-// 移动菜单链接点击事件
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        const icon = hamburger.querySelector('i');
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    });
-});
-
-// 平滑滚动
-const smoothScroll = (targetId) => {
-    const target = document.getElementById(targetId);
-    if (target) {
+// 返回顶部按钮点击事件 - 添加存在性检查
+if (backToTop) {
+    backToTop.addEventListener('click', () => {
         window.scrollTo({
-            top: target.offsetTop - 80,
+            top: 0,
             behavior: 'smooth'
         });
-    }
-};
-
-// 返回顶部按钮
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        backToTop.classList.add('active');
-    } else {
-        backToTop.classList.remove('active');
-    }
-    
-    // 导航栏滚动效果
-    if (window.scrollY > 100) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
     });
-});
+}
 
 // 菜品选择功能
 const foodPrices = {

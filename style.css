@@ -194,11 +194,14 @@ nav .container {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./1.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .home-content {
@@ -1158,6 +1161,12 @@ footer {
     
     .hamburger {
         display: block;
+    }
+    
+    .home {
+        /* 修复移动设备背景图不显示问题 */
+        background-attachment: scroll;
+        background-position: center center;
     }
     
     .home-content h1 {
